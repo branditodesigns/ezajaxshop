@@ -11,7 +11,7 @@
  * @Emai:   brandon@dankscape.com
  * @Date:   2016-11-24 14:20:11
  * @Last Modified by:   Brandon
- * @Last Modified time: 2016-11-27 22:43:05
+ * @Last Modified time: 2016-11-28 01:43:05
  */
 ?>
 
@@ -62,7 +62,7 @@
     var name=document.getElementById(id+"_name").value;
     var price=document.getElementById(id+"_price").value;
   
-    alertify.notify('<font style="color:darkgreen;"><b>'+name+' ('+price+')</b><br> was added to the cart.', 'success', 5, function(){  console.log('Added '+name+' ('+price+') to cart.'); });
+    alertify.notify('<font style="color:darkgreen;"><b>'+name+' <br> '+price+'</b><br> was added to the cart.', 'success', 5, function(){  console.log('Added '+name+' ('+price+') to cart.'); });
 
     $.ajax({
         type:'post',
