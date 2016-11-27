@@ -1,0 +1,214 @@
+body
+{
+	background-color:#E6E6E6;
+	font-family:helvetica;
+	margin:0px auto;
+	padding:0px;
+}
+#logoheader {
+color: #fff;
+text-align: center;
+font-size: 48px;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+transition: font-size 1.0s;
+}
+/*
+#logoheader:hover {
+color: #fff;
+font-size: 64px;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+border-radius: 15%;
+transition: font-size 1.0s, border-radius 1.3s;
+-webkit-transition: font-size 1.0s, border-radius 1.3s;
+  -webkit-animation: pulse 1.0s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.0s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.0s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.0s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+*/
+
+#logosubheader {
+color: #fff;
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+transition: font-size 1.0s;
+}
+
+#cart_button
+{
+	margin-top:20px;
+	margin-left:80px;
+	cursor:pointer;
+}
+#cart_button img
+{
+	width:40px;
+	height:40px;
+}
+#cart_button input[type="button"]
+{
+	background:none;
+	border:none;
+	background-color:darkgreen;
+	border-radius:25%;
+	height:30px;
+	width:30px;
+	margin-top:0px;
+	color:white;
+	font-size:17px;
+	cursor:pointer;
+}
+#empty_cart
+{
+	background:red;
+	border-radius: 5px;
+}
+#empty_cart :hover
+{
+	background:red;
+	border-radius: 2.5px;
+}
+#mycart
+{
+	display:none;
+	background-color:white;
+	width:800px;
+	margin-left:100px;
+}
+#mycart .cart_items
+{
+	border-bottom:1px dashed silver;
+	padding:20px;
+	padding-left:10px;
+}
+#mycart .cart_items img
+{
+	width:70px;
+	height:50px;
+	float:left;
+}
+#mycart .cart_items p
+{
+	margin:0px;
+	font-size:17px;
+	color:green;
+}
+h1
+{
+	margin-top:100px;
+	color:green;
+	text-align:center;
+}
+#item_div
+{
+	float:left;
+	margin-left:60px;
+}
+.items
+{
+	padding:20px;
+	background-color:white;
+	width:250px;
+	height:350px;
+	margin-top:20px;
+	box-shadow:0px 0px 10px 0px #A4A4A4;
+	box-sizing:border-box;
+	float:left;
+	margin:20px;
+	border-radius: 10px;
+	position:relative;
+}
+.items:hover input[type="button"]
+{
+	border: 5px solid rgba(0, 150, 50, 0.45);
+	border-radius: 25px 25px 25px 25px;
+	display:block;
+	background-image: url("../img/cart.png");
+    background-size: 30px 30px;
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 30px;
+	transition: 1.0s;
+}
+.items input[type="button"]
+{
+	display:none;
+	background:none;
+	background-color:#3ADF00;
+	width:200px;
+	height:50px;
+	border:2px solid red;
+	font-size:20px;
+	color:white;
+	position:absolute;
+	top:150px;
+	left:25px;
+	cursor:pointer;
+}
+.items img
+{
+	width:100px;
+	height:100px;
+	position: absolute;
+	bottom: 5%;
+	left: 30%;
+	margin-bottom: 0px;
+	transition: 0.5s;
+}
+.items img :hover
+{
+	width:100px;
+	height:100px;
+}
+.items :hover
+{
+	margin-bottom: 15px;
+	transition: 0.5s;
+}
+.items p
+{
+	color: green;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+    color: Chartreuse;
+    border-bottom: 1px solid DarkSeaGreen;
+    transition: 1.25s;
+}
+
+li a.active {
+    background-color: #4CAF50;
+}
+
+li a.active:hover {
+    background-color: DarkSeaGreen;
+}
