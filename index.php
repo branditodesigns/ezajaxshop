@@ -11,7 +11,7 @@
  * @Emai:   brandon@dankscape.com
  * @Date:   2016-11-24 14:20:11
  * @Last Modified by:   Brandon
- * @Last Modified time: 2016-11-26 11:20:06
+ * @Last Modified time: 2016-11-27 22:43:05
  */
 ?>
 
@@ -21,15 +21,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Simple ServerScape Shop</title>
+    <title>ez AJAX Shop</title>
     <meta name="description" content="RSPS Store Webfront" />
     <meta name="keywords" content="rsps, serverscape, store, serverscape store, serverscape webfront" />
     <meta name="author" content="Brandon" />
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/icons.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylingsheet.css" />
     <script src="js/modernizr.custom.js"></script>
     <link rel="stylesheet" type="text/css" href="js/css/alertify.css">
     <link rel="stylesheet" type="text/css" href="js/css/themes/semantic.css">
@@ -86,10 +82,6 @@
     }
     function empty_cart(id)
     {
-    //var ele=document.getElementById(id);
-    //var img_src=ele.getElementsByTagName("img")[0].src;
-    //var name=document.getElementById(id+"_name").value;
-    //var price=document.getElementById(id+"_price").value;
   
     alertify.notify('<font style="color:darkred;"><b>You emptied the cart.</b>', 'error', 5, function(){  console.log('Cart was emptied by the user.'); });
 
@@ -101,7 +93,6 @@
         },
         success:function(response) {
           document.getElementById("total_items").value=0;
-          document.getElementById("mycart").innerHTML=response;
           $("#mycart").slideToggle();
         }
       });
