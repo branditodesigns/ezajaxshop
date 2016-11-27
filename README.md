@@ -12,7 +12,7 @@ Under no circumstances may you re-use **ANYTHING** _(including, but not limited 
 #### Installation
 ======
 
-Well, there isn't much to it, just place the contents of this repository/archive into your web root.
+#######Well, there isn't much to it, just place the contents of this repository/archive into your web root.
 ------
 
 
@@ -34,5 +34,3 @@ Couldn't leave this out :)
 ------
 
 ezajaxshop
-
-_test **test__test **test_
