@@ -201,8 +201,8 @@ li a {
 li a:hover {
     background-color: #111;
     color: Chartreuse;
-    border-bottom: 1px solid DarkSeaGreen;
-    transition: 1.25s;
+    border-bottom: 10px solid DarkSeaGreen;
+    transition: background-color 1.25s;
 }
 
 li a.active {
@@ -212,3 +212,10 @@ li a.active {
 li a.active:hover {
     background-color: DarkSeaGreen;
 }
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }

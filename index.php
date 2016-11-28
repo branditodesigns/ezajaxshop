@@ -11,7 +11,7 @@
  * @Emai:   brandon@dankscape.com
  * @Date:   2016-11-24 14:20:11
  * @Last Modified by:   Brandon
- * @Last Modified time: 2016-11-28 09:39:20
+ * @Last Modified time: 2016-11-28 13:08:11
  */
 ?>
 
@@ -35,8 +35,61 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/alertify.js"></script>
     <script type="text/javascript" src="js/cart.js"></script>
+    <script type="text/javascript" src="js/ac.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){ 
+
+      var countries = [
+       { value: 'Halloween Mask Set', data: 'AD', category: 'NBA' },
+       { value: 'Ultimate Halloween Mask Set', data: 'AD', category: 'NBA' },
+       { value: 'Black Halloween Mask', data: 'AD', category: 'NBA' },
+       { value: 'Red Halloween Mask', data: 'AD', category: 'NBA' },
+       { value: 'Green Halloween Mask', data: 'AD', category: 'NBA' },
+       { value: 'Blue Halloween Mask', data: 'AD', category: 'NBA' },
+       { value: 'Black Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'Rainbow Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'Blue Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'White Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'Purple Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'Red Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'Yellow Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'Green Partyhat', data: 'AD', category: 'NBA' },
+       { value: 'Partyhat Set', data: 'AD', category: 'NBA' },
+       { value: 'Ultimate Partyhat Set', data: 'AD', category: 'NBA' },
+       { value: 'Santa Hat', data: 'AD', category: 'NBA' },
+       { value: 'Black Santa Hat', data: 'AD', category: 'NBA' },
+       { value: 'Christmas Cracker', data: 'AD', category: 'NBA' },
+       { value: '$5.00 Scroll', data: 'AD', category: 'NBA' },
+       { value: '$10.00 Scroll', data: 'AD', category: 'NBA' },
+       { value: '$20.00 Scroll', data: 'AD', category: 'NBA' },
+       { value: '$50.00 Scroll', data: 'AD', category: 'NBA' },
+       { value: 'Dragon Claws', data: 'AD', category: 'NBA' },
+       { value: 'Armadyl Godsword', data: 'AD', category: 'NBA' },
+       { value: 'Abyssal Whip', data: 'AD', category: 'NBA' },
+       { value: 'Amulet of Fury', data: 'AD', category: 'NBA' },
+       { value: 'Bandos Godsword', data: 'AD', category: 'NBA' },
+       { value: 'Zamorak Godsword', data: 'AD', category: 'NBA' },
+       { value: 'Saradomin Godsword', data: 'AD', category: 'NBA' },
+       { value: 'Statius\' Warhammer', data: 'AD', category: 'NBA' },
+       { value: 'Vesta\'s Longsword', data: 'AD', category: 'NBA' },
+       { value: 'Dark Bow', data: 'AD', category: 'NBA' },
+       { value: 'OSRS Boots', data: 'AD', category: 'NBA' },
+       { value: 'RS3 Boots', data: 'AD', category: 'NBA' },
+       { value: '3rd Age Melee Set', data: 'AD', category: 'NBA' },
+       { value: '3rd Age Mage Set', data: 'AD', category: 'NBA' },
+       { value: '3rd Age Range Set', data: 'AD', category: 'NBA' },
+       // ...
+       //{ value: '', data: 'AD', category: 'NBA' },
+       { value: 'Spirit Shield Set', data: 'ZZ' }
+    ];
+
+    $('#autocomplete').autocomplete({
+        lookup: countries,
+        onSelect: function (suggestion) {
+            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+        }
+    });
+
       //Url.getLocation();
       $.ajax({
         type:'post',
@@ -50,6 +103,15 @@
       });
 
     });
+    /*
+    $('#autocomplete').autocomplete({
+      serviceUrl: 'products.php',
+      onSelect: function (suggestion) {
+          alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+      }
+    });
+    */
+    
     </script>
   
 </head>
@@ -64,9 +126,10 @@
     <li><a href="#scrolls">Scrolls</a></li>
     <li><a href="#specials">Specials</a></li>
     <li><a href="#supplies">Supplies</a></li>
-    <li style="float:right"></li>
     <li style="float:right"><a href="#showcart" onclick="show_cart();"><img src="img/cart.png" style="width:25px; height: 25px;margin-bottom:-5px;"> View Cart <small id="total_items" style="background:red;border-radius: 5px;"></small></a></li>
+    <li style="float:right"><a href="#search"  onclick="$('#autocomplete').slideToggle();">&#2637;</a></li>
   </ul>
+  <input type="text" name="productsearch" id="autocomplete" style="float:right;width:10%;height:40px;border-radius:15px;border:none;font-weight:bold;text-align:center;" placeholder="Search..." />
 </nav>
 <body>
 
@@ -101,7 +164,7 @@
     </div>
 
     <div class="items" id="item5">
-      <img src="img/products/rares/rainbow partyhat.png">
+      <img src="img/products/bundles/partyhatset.png">
       <input type="button" value="Add To Cart" onclick="cart('item5')">
       <p><b>Partyhat Set</b></p>
       <p>A set of partyhats. Includes: Blue partyhat, White partyhat, Red partyhat, Green partyhat, Yellow partyhat and Purple partyhat.</p>

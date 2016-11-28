@@ -83,3 +83,35 @@ function cart(id)
      });
 
     }
+
+    function search()
+    {
+      $.ajax({
+      type:'post',
+      url:'search_items.php',
+      data:{
+        string:"cart"
+      },
+      success:function(response) {
+        document.getElementById("mycart").innerHTML=response;
+        $("#mycart").slideToggle();
+      }
+     });
+
+    }
+
+    function handleSearch()
+    {
+      $.ajax({
+      type:'post',
+      url:'search_items.php',
+      data:{
+        search:document.getElementById("autocomplete").value
+      },
+      success:function(response) {
+        document.getElementById("mycart").innerHTML=response;
+        $("#mycart").slideToggle();
+      }
+     });
+
+    }
