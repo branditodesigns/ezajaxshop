@@ -11,7 +11,7 @@
  * @Emai:   brandon@dankscape.com
  * @Date:   2016-11-24 14:20:11
  * @Last Modified by:   Brandon
- * @Last Modified time: 2016-11-28 13:08:11
+ * @Last Modified time: 2016-11-29 15:15:47
  */
 ?>
 
@@ -37,83 +37,33 @@
     <script type="text/javascript" src="js/cart.js"></script>
     <script type="text/javascript" src="js/ac.min.js"></script>
     <script type="text/javascript">
-    $(document).ready(function(){ 
+      $(document).ready(function(){ 
+        var _$_11ea=["\x48\x61\x6C\x6C\x6F\x77\x65\x65\x6E\x20\x4D\x61\x73\x6B\x20\x53\x65\x74","\x41\x44","\x4E\x42\x41","\x55\x6C\x74\x69\x6D\x61\x74\x65\x20\x48\x61\x6C\x6C\x6F\x77\x65\x65\x6E\x20\x4D\x61\x73\x6B\x20\x53\x65\x74","\x42\x6C\x61\x63\x6B\x20\x48\x61\x6C\x6C\x6F\x77\x65\x65\x6E\x20\x4D\x61\x73\x6B","\x52\x65\x64\x20\x48\x61\x6C\x6C\x6F\x77\x65\x65\x6E\x20\x4D\x61\x73\x6B","\x47\x72\x65\x65\x6E\x20\x48\x61\x6C\x6C\x6F\x77\x65\x65\x6E\x20\x4D\x61\x73\x6B","\x42\x6C\x75\x65\x20\x48\x61\x6C\x6C\x6F\x77\x65\x65\x6E\x20\x4D\x61\x73\x6B","\x42\x6C\x61\x63\x6B\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x52\x61\x69\x6E\x62\x6F\x77\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x42\x6C\x75\x65\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x57\x68\x69\x74\x65\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x50\x75\x72\x70\x6C\x65\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x52\x65\x64\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x59\x65\x6C\x6C\x6F\x77\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x47\x72\x65\x65\x6E\x20\x50\x61\x72\x74\x79\x68\x61\x74","\x50\x61\x72\x74\x79\x68\x61\x74\x20\x53\x65\x74","\x55\x6C\x74\x69\x6D\x61\x74\x65\x20\x50\x61\x72\x74\x79\x68\x61\x74\x20\x53\x65\x74","\x53\x61\x6E\x74\x61\x20\x48\x61\x74","\x42\x6C\x61\x63\x6B\x20\x53\x61\x6E\x74\x61\x20\x48\x61\x74","\x43\x68\x72\x69\x73\x74\x6D\x61\x73\x20\x43\x72\x61\x63\x6B\x65\x72","\x24\x35\x2E\x30\x30\x20\x53\x63\x72\x6F\x6C\x6C","\x24\x31\x30\x2E\x30\x30\x20\x53\x63\x72\x6F\x6C\x6C","\x24\x32\x30\x2E\x30\x30\x20\x53\x63\x72\x6F\x6C\x6C","\x24\x35\x30\x2E\x30\x30\x20\x53\x63\x72\x6F\x6C\x6C","\x44\x72\x61\x67\x6F\x6E\x20\x43\x6C\x61\x77\x73","\x41\x72\x6D\x61\x64\x79\x6C\x20\x47\x6F\x64\x73\x77\x6F\x72\x64","\x41\x62\x79\x73\x73\x61\x6C\x20\x57\x68\x69\x70","\x41\x6D\x75\x6C\x65\x74\x20\x6F\x66\x20\x46\x75\x72\x79","\x42\x61\x6E\x64\x6F\x73\x20\x47\x6F\x64\x73\x77\x6F\x72\x64","\x5A\x61\x6D\x6F\x72\x61\x6B\x20\x47\x6F\x64\x73\x77\x6F\x72\x64","\x53\x61\x72\x61\x64\x6F\x6D\x69\x6E\x20\x47\x6F\x64\x73\x77\x6F\x72\x64","\x53\x74\x61\x74\x69\x75\x73\x27\x20\x57\x61\x72\x68\x61\x6D\x6D\x65\x72","\x56\x65\x73\x74\x61\x27\x73\x20\x4C\x6F\x6E\x67\x73\x77\x6F\x72\x64","\x44\x61\x72\x6B\x20\x42\x6F\x77","\x4F\x53\x52\x53\x20\x42\x6F\x6F\x74\x73","\x52\x53\x33\x20\x42\x6F\x6F\x74\x73","\x33\x72\x64\x20\x41\x67\x65\x20\x4D\x65\x6C\x65\x65\x20\x53\x65\x74","\x33\x72\x64\x20\x41\x67\x65\x20\x4D\x61\x67\x65\x20\x53\x65\x74","\x33\x72\x64\x20\x41\x67\x65\x20\x52\x61\x6E\x67\x65\x20\x53\x65\x74","\x53\x70\x69\x72\x69\x74\x20\x53\x68\x69\x65\x6C\x64\x20\x53\x65\x74","\x5A\x5A","\x59\x6F\x75\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x3A\x20","\x76\x61\x6C\x75\x65","\x2C\x20","\x64\x61\x74\x61","\x61\x75\x74\x6F\x63\x6F\x6D\x70\x6C\x65\x74\x65","\x23\x61\x75\x74\x6F\x63\x6F\x6D\x70\x6C\x65\x74\x65","\x70\x6F\x73\x74","\x73\x74\x6F\x72\x65\x5F\x69\x74\x65\x6D\x73\x2E\x70\x68\x70","\x74\x6F\x74\x61\x6C\x69\x74\x65\x6D\x73","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x74\x6F\x74\x61\x6C\x5F\x69\x74\x65\x6D\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\xA0","\x61\x6A\x61\x78","\x72\x65\x61\x64\x79"];$(document)[_$_11ea[56]](function(){var a=[{value:_$_11ea[0],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[3],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[4],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[5],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[6],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[7],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[8],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[9],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[10],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[11],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[12],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[13],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[14],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[15],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[16],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[17],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[18],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[19],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[20],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[21],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[22],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[23],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[24],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[25],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[26],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[27],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[28],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[29],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[30],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[31],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[32],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[33],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[34],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[35],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[36],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[37],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[38],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[39],data:_$_11ea[1],category:_$_11ea[2]},{value:_$_11ea[40],data:_$_11ea[41]}];$(_$_11ea[47])[_$_11ea[46]]({lookup:a,onSelect:function(b){alert(_$_11ea[42]+ b[_$_11ea[43]]+ _$_11ea[44]+ b[_$_11ea[45]])}});$[_$_11ea[55]]({type:_$_11ea[48],url:_$_11ea[49],data:{total_cart_items:_$_11ea[50]},success:function(c){document[_$_11ea[53]](_$_11ea[52])[_$_11ea[51]]= _$_11ea[54]+ c+ _$_11ea[54]}})})
+        
+        var test=eval((function(){var e=[66,90,74,88,76,71,81,80,79,70,65,72,75,60,82,94,85,86,87,89];var s=[];for(var v=0;v<e.length;v++)s[e[v]]=v+1;var a=[];for(var w=0;w<arguments.length;w++){var p=arguments[w].split('~');for(var g=p.length-1;g>=0;g--){var b=null;var i=p[g];var y=null;var q=0;var f=i.length;var x;for(var m=0;m<f;m++){var h=i.charCodeAt(m);var t=s[h];if(t){b=(t-1)*94+i.charCodeAt(m+1)-32;x=m;m++;}else if(h==96){b=94*(e.length-32+i.charCodeAt(m+1))+i.charCodeAt(m+2)-32;x=m;m+=2;}else{continue;}if(y==null)y=[];if(x>q)y.push(i.substring(q,x));y.push(p[b+1]);q=m+1;}if(y!=null){if(q<f)y.push(i.substring(q));p[g]=y.join('');}}a.push(p[0]);}var c=a.join('');var d='abcdefghijklmnopqrstuvwxyz';var u=[92,96,39,42,10,126].concat(e);var k=String.fromCharCode(64);for(var v=0;v<u.length;v++)c=c.split(k+d.charAt(v)).join(String.fromCharCode(u[v]));return c.split(k+'!').join(k);})('var _$_7eb5=["@ralloween MaskB(qD","N@g@qB*wltimate @ralloween MaskB(glack B"ued B"lreen B"glue B"glackB%uainbowB%glueB%yhiteB%nurpleB%uedB%zellowB%lreenB%nartyhatB(wltimate @nartyhatB)Santa @ratB*glack Santa @rat","Christmas Cracker","$5.B\'$10.B\'$20.B\'$50.B\'Dragon ClawsB*qrmadylB&@qbyssal @yhipB*qmulet of @puryB*gandosB&@hamorakB&SaradominB&Statius@c @yarhammerB*xesta@cs @kongsword","Dark @gowB*oS@uS @gootsB*uS3 @goots","3rd @qge MeleeB)3rd @qge MageB)3rd @qge @uangeB)Spirit ShieldB(h@h"];var countries=[{value:_$_7eb5[B#B [B!3B$B [B!4B$B [B!5B$B [B!6B$B [B!7B$B [B!8B$B [B!9B$B [B!1B#B [B!11B$B [B!12B$B [B!13B$B [B!14B$B [B!15B$B [B!16B$B [B!17B$B [B!18B$B [B!19B$B [B!2B#B [B!21B$B [B!22B$B [B!23B$B [B!24B$B [B!25B$B [B!26B$B [B!27B$B [B!28B$B [B!29B$B [B!3B#B [B!31B$B [B!32B$B [B!33B$B [B!34B$B [B!35B$B [B!36B$B [B!37B$B [B!38B$B [B!39B$B [B!4B#41]}]~1],category:_$_7eb5~2]},{value:_$_7eb5[~@ralloween MaskB*~0B$~],data:_$_7eb5[~ @nartyhatB*~ @lodsword","~00 Scroll","~B)@~ Set","~","@'));
 
-      var countries = [
-       { value: 'Halloween Mask Set', data: 'AD', category: 'NBA' },
-       { value: 'Ultimate Halloween Mask Set', data: 'AD', category: 'NBA' },
-       { value: 'Black Halloween Mask', data: 'AD', category: 'NBA' },
-       { value: 'Red Halloween Mask', data: 'AD', category: 'NBA' },
-       { value: 'Green Halloween Mask', data: 'AD', category: 'NBA' },
-       { value: 'Blue Halloween Mask', data: 'AD', category: 'NBA' },
-       { value: 'Black Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'Rainbow Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'Blue Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'White Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'Purple Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'Red Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'Yellow Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'Green Partyhat', data: 'AD', category: 'NBA' },
-       { value: 'Partyhat Set', data: 'AD', category: 'NBA' },
-       { value: 'Ultimate Partyhat Set', data: 'AD', category: 'NBA' },
-       { value: 'Santa Hat', data: 'AD', category: 'NBA' },
-       { value: 'Black Santa Hat', data: 'AD', category: 'NBA' },
-       { value: 'Christmas Cracker', data: 'AD', category: 'NBA' },
-       { value: '$5.00 Scroll', data: 'AD', category: 'NBA' },
-       { value: '$10.00 Scroll', data: 'AD', category: 'NBA' },
-       { value: '$20.00 Scroll', data: 'AD', category: 'NBA' },
-       { value: '$50.00 Scroll', data: 'AD', category: 'NBA' },
-       { value: 'Dragon Claws', data: 'AD', category: 'NBA' },
-       { value: 'Armadyl Godsword', data: 'AD', category: 'NBA' },
-       { value: 'Abyssal Whip', data: 'AD', category: 'NBA' },
-       { value: 'Amulet of Fury', data: 'AD', category: 'NBA' },
-       { value: 'Bandos Godsword', data: 'AD', category: 'NBA' },
-       { value: 'Zamorak Godsword', data: 'AD', category: 'NBA' },
-       { value: 'Saradomin Godsword', data: 'AD', category: 'NBA' },
-       { value: 'Statius\' Warhammer', data: 'AD', category: 'NBA' },
-       { value: 'Vesta\'s Longsword', data: 'AD', category: 'NBA' },
-       { value: 'Dark Bow', data: 'AD', category: 'NBA' },
-       { value: 'OSRS Boots', data: 'AD', category: 'NBA' },
-       { value: 'RS3 Boots', data: 'AD', category: 'NBA' },
-       { value: '3rd Age Melee Set', data: 'AD', category: 'NBA' },
-       { value: '3rd Age Mage Set', data: 'AD', category: 'NBA' },
-       { value: '3rd Age Range Set', data: 'AD', category: 'NBA' },
-       // ...
-       //{ value: '', data: 'AD', category: 'NBA' },
-       { value: 'Spirit Shield Set', data: 'ZZ' }
-    ];
+        $('#autocomplete').autocomplete({
+            lookup: test,
+            onSelect: function (suggestion) {
+                alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            }
+        });
 
-    $('#autocomplete').autocomplete({
-        lookup: countries,
-        onSelect: function (suggestion) {
-            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-        }
-    });
+          //Url.getLocation();
+          $.ajax({
+            type:'post',
+            url:'store_items.php',
+            data:{
+              total_cart_items:"totalitems"
+            },
+            success:function(response) {
+              document.getElementById("total_items").innerHTML=' ' + response + ' '; //cheap hax alert, used alt+0160 for the spaces lel (should have used content: ''; in css though)
+            }
+          });
 
-      //Url.getLocation();
-      $.ajax({
-        type:'post',
-        url:'store_items.php',
-        data:{
-          total_cart_items:"totalitems"
-        },
-        success:function(response) {
-          document.getElementById("total_items").innerHTML=' ' + response + ' '; //cheap hax alert, used alt+0160 for the spaces lel (should have used content: ''; in css though)
-        }
       });
 
-    });
-    /*
-    $('#autocomplete').autocomplete({
-      serviceUrl: 'products.php',
-      onSelect: function (suggestion) {
-          alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-      }
-    });
-    */
-    
     </script>
-  
 </head>
 
 <nav>
@@ -127,15 +77,20 @@
     <li><a href="#specials">Specials</a></li>
     <li><a href="#supplies">Supplies</a></li>
     <li style="float:right"><a href="#showcart" onclick="show_cart();"><img src="img/cart.png" style="width:25px; height: 25px;margin-bottom:-5px;"> View Cart <small id="total_items" style="background:red;border-radius: 5px;"></small></a></li>
-    <li style="float:right"><a href="#search"  onclick="$('#autocomplete').slideToggle();">&#2637;</a></li>
+    <li style="float:right">
+    <input type="text" name="productsearch" id="autocomplete" style="float:left;width:100%;height:40px;border-radius:15px;border:none;font-weight:bold;text-align:center;" placeholder="Search..." />
+    <a href="#search"  onclick="$('#autocomplete').slideToggle();">&#2637;</a>
+    </li>
   </ul>
-  <input type="text" name="productsearch" id="autocomplete" style="float:right;width:10%;height:40px;border-radius:15px;border:none;font-weight:bold;text-align:center;" placeholder="Search..." />
+  
 </nav>
 <body>
 
 
 <div id="mycart" style="float: right;">
+
 </div>
+
 
 <h1 id="logoheader">ez AJAX Shop</h1>
 <center>
